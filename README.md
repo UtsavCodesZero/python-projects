@@ -7,7 +7,7 @@ Each project is designed to solve real-world problems or provide interactive exp
 ## What You’ll Find Here
 
 - **Games:** Fun interactive games like Snake-Water-Gun demonstrating control flow, logic, and user interaction.
-- **Utilities:** Handy tools and calculators built with clean, readable code.
+- **Utilities:** Handy tools built with clean, readable code.
 - **Algorithms & Data Structures:** Implementations that deepen my grasp of computational thinking.
 - **Learning Projects:** Experimental code snippets and mini-projects exploring new libraries and Python features.
 

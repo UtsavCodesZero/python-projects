@@ -3,29 +3,30 @@
 def menu():
     print("""\tWELCOME TO UTSAV'S CALCULATOR\n
 You can do following calculations in this calculator:
-a. Addition
-b. Subtraction
-c. Multiplication
-d. Division\n""")
++  Addition
+-  Subtraction
+*  Multiplication
+/  Division\n""")
     
-    calculation_selection = input("Which calculation would you like to do? (a, b, c, d): ").lower()
-    if (calculation_selection != "a" and calculation_selection != "b" and calculation_selection != "c" and calculation_selection != "d"):
-          print("\nInvalid calculation selection. Please select a or b or c or d.")
+    calculation_selection = input("Which calculation would you like to do? (+, -, *, /): ")
+    if (calculation_selection != "+" and calculation_selection != "-" and calculation_selection != "*" and calculation_selection != "/"):
+          print("\nInvalid calculation selection. Please select +, -, *, or /.")
           menu()
+          return
 
     value_selection1 = float(input("\nEnter first value: "))
     value_selection2 = float(input("\nEnter second value: "))
 
-    if (calculation_selection == "a"):
+    if (calculation_selection == "+"):
         print(f"\nResult:\n{value_selection1} + {value_selection2} = {value_selection1 + value_selection2}\n")
 
-    elif (calculation_selection == "b"):
+    elif (calculation_selection == "-"):
         print(f"\nResult:\n{value_selection1} - {value_selection2} = {value_selection1 - value_selection2}\n")
 
-    elif (calculation_selection == "c"):
-        print(f"\nResult:\n{value_selection1} x {value_selection2} = {value_selection1 * value_selection2}\n")
+    elif (calculation_selection == "*"):
+        print(f"\nResult:\n{value_selection1} * {value_selection2} = {value_selection1 * value_selection2}\n")
 
-    elif (calculation_selection == "d"):
+    elif (calculation_selection == "/"):
         if (value_selection2 == 0):
              print("Error: Cannot divide by zero!\n")
              ask_continue()
